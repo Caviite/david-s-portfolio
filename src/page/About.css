@@ -1,0 +1,272 @@
+:root {
+    --bg-about: #0d1326;
+    --code-green: #4ade80;
+    --code-blue: #60a5fa;
+    --code-purple: #c084fc;
+}
+
+.about {
+    position: relative;
+    background-color: var(--bg-about);
+    background-image: radial-gradient(90% 70% at 85% 10%, rgba(99, 102, 241, 0.12) 0%, transparent 60%);
+    padding: 100px 6vw;
+    color: var(--text-primary);
+    overflow: hidden;
+}
+
+.about__inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.about__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.about__eyebrow-line {
+    width: 28px;
+    height: 2px;
+    background: var(--accent-blue);
+    display: inline-block;
+}
+
+.about__heading {
+    font-family: "Sora", sans-serif;
+    font-size: clamp(2.2rem, 4.4vw, 3.4rem);
+    line-height: 1.05;
+    font-weight: 800;
+    margin: 0 0 16px;
+}
+
+.about__heading-light,
+.about__heading-gradient {
+    display: block;
+}
+
+.about__heading-light {
+    color: var(--text-primary);
+}
+
+.about__heading-gradient {
+    background: linear-gradient(90deg, #4f8dff 0%, #7c7bff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.about__role {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    font-weight: 500;
+    margin: 0 0 24px;
+}
+
+.about__paragraph {
+    font-size: 0.98rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    margin: 0 0 18px;
+    max-width: 520px;
+}
+
+.about__traits {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px 20px;
+    margin: 30px 0 34px;
+}
+
+.about__trait {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about__trait-icon {
+    color: var(--accent-blue);
+    margin-bottom: 4px;
+}
+
+.about__trait-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.about__trait-desc {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.about__signature {
+    font-family: "Segoe Script", "Brush Script MT", cursive;
+    font-size: 1.8rem;
+    color: var(--accent-blue);
+    margin: 4px 0 24px;
+}
+
+.about__quote {
+    display: flex;
+    gap: 14px;
+    background: rgba(15, 20, 36, 0.6);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 18px 22px;
+    max-width: 460px;
+}
+
+.about__quote-bar {
+    flex-shrink: 0;
+    width: 3px;
+    border-radius: 2px;
+    background: var(--accent-blue);
+}
+
+.about__quote p {
+    margin: 0;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+/* Monitor mockup */
+.about__monitor-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 100px;
+}
+
+.about__monitor {
+    width: 100%;
+    max-width: 460px;
+    border-radius: 14px;
+    background: #0b0f1e;
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(99, 102, 241, 0.12);
+    overflow: hidden;
+}
+
+.about__monitor-bar {
+    display: flex;
+    gap: 7px;
+    padding: 12px 16px;
+    background: #10152a;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.about__monitor-bar span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #384157;
+}
+
+.about__monitor-bar span:nth-child(1) {
+    background: #ef4444;
+}
+
+.about__monitor-bar span:nth-child(2) {
+    background: #f59e0b;
+}
+
+.about__monitor-bar span:nth-child(3) {
+    background: #22c55e;
+}
+
+.about__monitor-screen {
+    padding: 26px 24px;
+    min-height: 260px;
+}
+
+.about__code {
+    font-family: "Fira Code", "Consolas", monospace;
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--code-blue);
+    white-space: pre-wrap;
+}
+
+.about__code-line {
+    min-height: 1.9em;
+}
+
+.about__cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    margin-left: 2px;
+    background: var(--code-green);
+    vertical-align: middle;
+    animation: blink 0.9s step-end infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.about__monitor-stand {
+    width: 14px;
+    height: 34px;
+    background: #10152a;
+    border-left: 1px solid var(--border-subtle);
+    border-right: 1px solid var(--border-subtle);
+}
+
+.about__monitor-base {
+    width: 130px;
+    height: 10px;
+    border-radius: 6px;
+    background: #10152a;
+    border: 1px solid var(--border-subtle);
+}
+
+@media (max-width: 900px) {
+    .about__inner {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .about__traits {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about__monitor-wrap {
+        position: static;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 520px) {
+    .about__traits {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about__cursor {
+        animation: none;
+    }
+}
