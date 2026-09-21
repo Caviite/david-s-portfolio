@@ -1,48 +1,18 @@
 :root {
-    --bg-projects: #0a0f22;
+    --bg-projects: #0c1125;
 }
 
 .projects {
     position: relative;
     background-color: var(--bg-projects);
-    background-image: radial-gradient(80% 60% at 10% 100%, rgba(59, 130, 246, 0.1) 0%, transparent 60%);
+    background-image:
+        radial-gradient(80% 60% at 10% 100%, rgba(59, 130, 246, 0.08) 0%, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%233b82f6' stroke-width='1' stroke-opacity='0.16'%3E%3Cpath d='M0 30H60V90H120'/%3E%3Cpath d='M30 0V60H90V120'/%3E%3C/g%3E%3Cg fill='%233b82f6' fill-opacity='0.28'%3E%3Ccircle cx='0' cy='30' r='2'/%3E%3Ccircle cx='60' cy='30' r='2'/%3E%3Ccircle cx='60' cy='90' r='2'/%3E%3Ccircle cx='120' cy='90' r='2'/%3E%3Ccircle cx='30' cy='0' r='2'/%3E%3Ccircle cx='30' cy='60' r='2'/%3E%3Ccircle cx='90' cy='60' r='2'/%3E%3Ccircle cx='90' cy='120' r='2'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat, repeat;
+    background-size: auto, 120px 120px;
     padding: 100px 6vw;
     color: var(--text-primary);
     overflow: hidden;
-}
-
-.projects__network {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-}
-
-.projects__network-line {
-    stroke: var(--accent-blue);
-    stroke-width: 1;
-    opacity: 0.1;
-    animation: networkPulse 5s ease-in-out infinite;
-}
-
-.projects__network-node {
-    fill: var(--accent-blue);
-    opacity: 0.35;
-    animation: networkFloat 7s ease-in-out infinite;
-    transform-box: fill-box;
-    transform-origin: center;
-}
-
-@keyframes networkPulse {
-    0%, 100% { opacity: 0.06; }
-    50% { opacity: 0.16; }
-}
-
-@keyframes networkFloat {
-    0%, 100% { transform: translateY(0); opacity: 0.25; }
-    50% { transform: translateY(-8px); opacity: 0.5; }
 }
 
 .projects__inner {
@@ -220,12 +190,5 @@
 @media (max-width: 480px) {
     .projects {
         padding: 72px 6vw;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .projects__network-line,
-    .projects__network-node {
-        animation: none;
     }
 }

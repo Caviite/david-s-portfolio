@@ -78,26 +78,6 @@ const skills = [
     },
 ];
 
-const codeSnippet = [
-    "const build = async () => {",
-    "  await learn('MERN');",
-    "  return ship({",
-    "    quality: 'high',",
-    "    speed: 'fast',",
-    "  });",
-    "};",
-    "",
-    "export default function App() {",
-    "  const [ideas, setIdeas] = useState([]);",
-    "  useEffect(() => {",
-    "    grow(skills);",
-    "  }, []);",
-    "  return <Future ready />;",
-    "}",
-    "",
-    "// keep going...",
-];
-
 const container = {
     hidden: {},
     show: { transition: { staggerChildren: 0.08 } },
@@ -141,25 +121,6 @@ function SkillCard({ label, desc, icon: Icon, color, percent }) {
 export default function Skills() {
     return (
         <section className="skills">
-            <div className="skills__code-bg" aria-hidden="true">
-                {[0, 1, 2, 3, 4].map((col) => (
-                    <div
-                        className="skills__code-track"
-                        key={col}
-                        style={{
-                            animationDuration: `${34 + col * 6}s`,
-                            animationDelay: `${col * -5}s`,
-                        }}
-                    >
-                        {[...codeSnippet, ...codeSnippet].map((line, i) => (
-                            <div className="skills__code-line" key={i}>
-                                {line || "\u00A0"}
-                            </div>
-                        ))}
-                    </div>
-                ))}
-            </div>
-
             <div className="skills__inner">
                 <motion.div
                     className="skills__content"

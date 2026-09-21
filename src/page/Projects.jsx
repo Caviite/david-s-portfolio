@@ -42,54 +42,6 @@ const projects = [
     },
 ];
 
-const nodes = [
-    [80, 120], [220, 60], [340, 180], [480, 90], [610, 220], [760, 110],
-    [900, 200], [1050, 80], [150, 320], [320, 380], [470, 340], [630, 400],
-    [800, 340], [950, 420], [1100, 300], [250, 540], [420, 600], [600, 560],
-    [780, 620], [940, 560], [60, 480],
-];
-
-const edges = [
-    [0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7],
-    [0, 8], [2, 9], [4, 10], [5, 11], [6, 12], [7, 13],
-    [8, 9], [9, 10], [10, 11], [11, 12], [12, 13], [13, 14],
-    [8, 15], [9, 16], [10, 17], [11, 17], [12, 18], [13, 19],
-    [15, 16], [16, 17], [17, 18], [18, 19], [8, 20], [15, 20],
-];
-
-function NetworkGraph() {
-    return (
-        <svg
-            className="projects__network"
-            viewBox="0 0 1200 700"
-            preserveAspectRatio="xMidYMid slice"
-            aria-hidden="true"
-        >
-            {edges.map(([a, b], i) => (
-                <line
-                    key={i}
-                    className="projects__network-line"
-                    x1={nodes[a][0]}
-                    y1={nodes[a][1]}
-                    x2={nodes[b][0]}
-                    y2={nodes[b][1]}
-                    style={{ animationDelay: `${(i % 6) * 0.6}s` }}
-                />
-            ))}
-            {nodes.map(([x, y], i) => (
-                <circle
-                    key={i}
-                    className="projects__network-node"
-                    cx={x}
-                    cy={y}
-                    r={i % 3 === 0 ? 4.5 : 3}
-                    style={{ animationDelay: `${(i % 5) * 0.9}s` }}
-                />
-            ))}
-        </svg>
-    );
-}
-
 const container = {
     hidden: {},
     show: {
@@ -105,7 +57,6 @@ const card = {
 export default function Projects() {
     return (
         <section className="projects" id="projects">
-            <NetworkGraph />
             <div className="projects__inner">
                 <motion.div
                     className="projects__header"
