@@ -84,7 +84,7 @@ export default function Portifolio() {
 
                     <motion.p className="hero__description" variants={item}>
                         I build responsive, functional, and user-focused web
-                        applications that solve real problems and create great digital
+                        applications that solve your business problems and create great digital
                         experiences.
                     </motion.p>
 
@@ -98,17 +98,17 @@ export default function Portifolio() {
                     </motion.ul>
 
                     <motion.div variants={item}>
-                        <a href="#projects" className="hero__cta">
-                            Let's Build Something Great
+                        <a href="/David Ademola CV.pdf" className="hero__cta" target="_blank" rel="noreferrer">   
+                            View My CV 
                             <ArrowRight size={18} />
                         </a>
                     </motion.div>
 
                     <motion.div className="hero__socials" variants={item}>
-                        <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+                        <a href="https://github.com/David Ademola" target="_blank" rel="noreferrer" aria-label="GitHub">
                             <GithubIcon />
                         </a>
-                        <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/adebayo-ademola-4869723b6" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                             <LinkedinIcon />
                         </a>
                         <a href="https://x.com/" target="_blank" rel="noreferrer" aria-label="X">
@@ -127,24 +127,7 @@ export default function Portifolio() {
                         <img src={heroPhoto} alt="David Ademola" />
                     </div>
 
-                    <motion.div
-                        className="hero__badge hero__badge--top"
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.9 }}
-                    >
-                        <span className="hero__badge-code">{"</>"}</span>
-                    </motion.div>
 
-                    <motion.div
-                        className="hero__badge hero__badge--bottom"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 1.05 }}
-                    >
-                        <span className="hero__badge-title">1+ Yrs Experience</span>
-                        <span className="hero__badge-sub">MERN Stack Developer</span>
-                    </motion.div>
                 </motion.div>
 
                 <div className="hero__vertical-label">

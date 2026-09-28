@@ -179,9 +179,6 @@ export default function Contact() {
                                 </a>
                             ))}
                         </div>
-                        <a href="#" className="contact__connect">
-                            Let's connect <ArrowRight size={15} />
-                        </a>
                     </div>
                 </motion.div>
 

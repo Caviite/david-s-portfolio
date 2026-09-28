@@ -389,7 +389,7 @@ body {
     }
 
     .hero__cta {
-        width: 100%;
+        width: 30%;
         justify-content: center;
     }
 }

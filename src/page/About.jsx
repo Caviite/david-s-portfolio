@@ -128,21 +128,19 @@ export default function About() {
                     </h2>
 
                     <p className="about__role">
-                        Full Stack Developer | Problem Solver | Lifelong Learner
+                        Full Stack Developer | Problem Solver
                     </p>
 
                     <p className="about__paragraph">
-                        I'm a passionate and dedicated web developer who enjoys turning
-                        ideas into real, functional, and user-friendly web applications.
-                        I specialize in building modern web solutions using the latest
-                        technologies, always focusing on clean code, great performance,
-                        and smooth user experiences.
+                        I’m Adebayo Ademola, a full-stack developer who enjoys turning ideas into functional, user-friendly web experiences. My journey into web development started with HTML and CSS and grew into working with JavaScript, React, Node.js, Express, MongoDB, Firebase, and REST APIs.
                     </p>
 
                     <p className="about__paragraph">
-                        I may be a junior developer, but I'm always open to learning,
-                        growing, and taking on new challenges. I believe in consistency,
-                        continuous improvement, and the power of good teamwork.
+                        I enjoy taking real-world problems and breaking them down into simple, practical solutions. From responsive business websites to full-stack applications, I focus on creating clean interfaces and reliable functionality that make products useful and easy to interact with. Through the projects I’ve built, I’ve worked with authentication, databases, dashboards, APIs, and real-world application workflows.
+                    </p>
+
+                    <p className="about__paragraph">
+                        For me, development is more than writing code. It’s about understanding the problem, building a solution that works, and continuously improving it. I’m focused on building meaningful digital products, and creating web experiences that people can actually use.
                     </p>
 
                     <div className="about__traits">
@@ -159,7 +157,7 @@ export default function About() {
 
                     <div className="about__quote">
                         <span className="about__quote-bar" />
-                        <p>"Not just building websites, I'm building my future."</p>
+                        <p>"Not just building websites, I'm solving business problems."</p>
                     </div>
                 </motion.div>
 
