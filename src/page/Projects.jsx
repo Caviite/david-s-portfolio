@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, Flame } from "lucide-react";
 import kolopocketImg from "../assets/kolopocket-dashboard.png";
 import cardproImg from "../assets/cardpro-landing.png";
-import flavouredOutletImg from "../assets/flavoured pomo.png";
+import flavouredOutletImg from "../assets/Flavoured pomo.png";
 import "./Projects.css";
 
 const GithubIcon = (props) => (
