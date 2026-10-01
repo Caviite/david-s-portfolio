@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Wallet, IdCard, GraduationCap } from "lucide-react";
+import { ExternalLink, Flame } from "lucide-react";
+import kolopocketImg from "../assets/kolopocket-dashboard.png";
+import cardproImg from "../assets/cardpro-landing.png";
+import flavouredOutletImg from "../assets/flavoured pomo.png";
 import "./Projects.css";
 
 const GithubIcon = (props) => (
@@ -14,10 +17,10 @@ const projects = [
         description:
             "A fintech web app digitizing Nigeria's informal Ajo rotating savings groups — built for Alajo collectors to manage contributions digitally.",
         tags: ["React", "MongoDB", "Express", "Node.js"],
-        icon: Wallet,
+        image: kolopocketImg,
         accent: "#4f8dff",
-        liveUrl: "#",
-        codeUrl: "#",
+        liveUrl: "https://kolopocket.vercel.app",
+        // codeUrl: "",
         flagship: true,
     },
     {
@@ -25,20 +28,21 @@ const projects = [
         description:
             "An AI-powered tool that generates polished digital business cards from a few user inputs, built with a React front end and Node backend.",
         tags: ["React", "Node.js", "AI API"],
-        icon: IdCard,
+        image: cardproImg,
         accent: "#7c7bff",
         liveUrl: "#",
-        codeUrl: "#",
+        // codeUrl: "#",
     },
     {
-        title: "Quest Code Institute",
+        title: "Favor Flavored Outlet (FFO)",
         description:
-            "A tech school management portal for handling student records, courses, and admin workflows for a coding institute.",
-        tags: ["JavaScript", "Firebase"],
-        icon: GraduationCap,
-        accent: "#60a5fa",
-        liveUrl: "#",
-        codeUrl: "#",
+            "A bold, fire-themed ordering site for a premium spicy pomo (cow skin) snack brand — dynamic product menu, spice-level picker, and one-click WhatsApp checkout.",
+        image: flavouredOutletImg,
+        tags: ["HTML", "CSS", "JavaScript"],
+        icon: Flame,
+        accent: "#ff6b00",
+        liveUrl: "https://favoroutlet.vercel.app",
+        // codeUrl: "",
     },
 ];
 
@@ -89,9 +93,10 @@ export default function Projects() {
                             description,
                             tags,
                             icon: Icon,
+                            image,
                             accent,
                             liveUrl,
-                            codeUrl,
+                            // codeUrl,
                             flagship,
                         }) => (
                             <motion.div
@@ -114,8 +119,18 @@ export default function Projects() {
                                         <span />
                                         <span />
                                     </div>
-                                    <div className="projects__mock-body">
-                                        <Icon size={40} color={accent} strokeWidth={1.6} />
+                                    <div
+                                        className={`projects__mock-body${image ? " projects__mock-body--image" : ""}`}
+                                    >
+                                        {image ? (
+                                            <img
+                                                src={image}
+                                                alt={`${title} screenshot`}
+                                                className="projects__mock-img"
+                                            />
+                                        ) : (
+                                            <Icon size={40} color={accent} strokeWidth={1.6} />
+                                        )}
                                     </div>
                                 </div>
 
@@ -132,9 +147,9 @@ export default function Projects() {
                                     <a href={liveUrl} target="_blank" rel="noreferrer">
                                         Live Demo <ExternalLink size={15} />
                                     </a>
-                                    <a href={codeUrl} target="_blank" rel="noreferrer">
+                                    {/* <a href={codeUrl} target="_blank" rel="noreferrer">
                                         <GithubIcon /> Code
-                                    </a>
+                                    </a> */}
                                 </div>
                             </motion.div>
                         )

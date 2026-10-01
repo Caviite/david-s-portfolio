@@ -137,7 +137,7 @@ export default function Contact() {
                     </h2>
 
                     <p className="contact__paragraph">
-                        Have a project in mind, a question, or just want to say hello?
+                        Have a project in mind, a question, an idea? 
                         I'd love to hear from you. Feel free to reach out through any of
                         the channels below or send me a message using the form.
                     </p>

@@ -347,6 +347,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    min-width: 0;
     background: rgba(8, 12, 24, 0.6);
     border: 1px solid var(--border-subtle);
     border-radius: 12px;
@@ -367,6 +368,7 @@
 .contact__field input,
 .contact__field textarea {
     flex: 1;
+    min-width: 0;
     background: none;
     border: none;
     outline: none;
@@ -423,7 +425,7 @@
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
     .contact__form-row {
         grid-template-columns: 1fr;
     }
