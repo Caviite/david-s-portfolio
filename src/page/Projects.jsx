@@ -39,7 +39,6 @@ const projects = [
             "A bold, fire-themed ordering site for a premium spicy pomo (cow skin) snack brand — dynamic product menu, spice-level picker, and one-click WhatsApp checkout.",
         image: flavouredOutletImg,
         tags: ["HTML", "CSS", "JavaScript"],
-        icon: Flame,
         accent: "#ff6b00",
         liveUrl: "https://favoroutlet.vercel.app",
         // codeUrl: "",
