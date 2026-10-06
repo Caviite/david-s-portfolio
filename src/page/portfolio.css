@@ -65,7 +65,7 @@ body {
 .hero__glow {
     position: absolute;
     border-radius: 50%;
-    filter: blur(120px);
+    filter: blur(121px);
     pointer-events: none;
     z-index: 0;
 }
