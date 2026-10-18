@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import "./SplashScreen.css";
+import "./Splashscreen.css";
 
 const TERMINAL_LINES = [
     "> initializing_portfolio...",
