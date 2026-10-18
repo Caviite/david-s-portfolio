@@ -54,7 +54,7 @@ function HighlightedLine({ text }) {
                 (mount your portfolio here so its entrance animations play as the splash fades)
   - onComplete: called once the splash has fully faded and can be removed
 */
-export default function SplashScreen({ onReveal = () => {}, onComplete = () => {} }) {
+export default function Splashscreen({ onReveal = () => {}, onComplete = () => {} }) {
     const [pos, setPos] = useState({ line: 0, char: 0 });
     const [phase, setPhase] = useState("typing"); // "typing" | "glow" | "exit"
 

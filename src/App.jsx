@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SplashScreen from "./page/Splashscreen";
+import Splashscreen from "./page/Splashscreen";
 import Portifolio from "./page/portfolio";
 import About from "./page/About";
 import Skills from "./page/Skills";
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div>
-      {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
+      {showSplash && <Splashscreen onComplete={() => setShowSplash(false)} />}
       <Portifolio />
       <About />
       <Skills />
