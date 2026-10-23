@@ -83,7 +83,7 @@ export default function Splashscreen({ onReveal = () => {}, onComplete = () => {
 
         const current = TERMINAL_LINES[pos.line];
         const atLineEnd = pos.char >= current.length;
-        const delay = reducedMotion ? 0 : atLineEnd ? 340 : 24 + Math.random() * 32;
+        const delay = reducedMotion ? 0 : atLineEnd ? 160 : 10 + Math.random() * 14;
 
         const timer = setTimeout(() => {
             setPos((p) =>
