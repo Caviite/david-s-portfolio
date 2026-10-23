@@ -98,7 +98,7 @@ export default function Portifolio() {
                     </motion.ul>
 
                     <motion.div variants={item}>
-                        <a href="/David Ademola CV.pdf" className="hero__cta" target="_blank" rel="noreferrer">   
+                        <a href="/David-Ademola-CV.pdf" className="hero__cta" target="_blank" rel="noreferrer">   
                             View My CV 
                             <ArrowRight size={18} />
                         </a>
