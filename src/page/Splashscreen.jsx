@@ -5,8 +5,8 @@ import "./Splashscreen.css";
 const TERMINAL_LINES = [
     "> initializing_portfolio...",
     '> console.log("Welcome i am glad to have you here!")',
-    "> loading_creative_mindset...",
     "> connecting_ideas_to_code...",
+    "> loading...",
     '> system.status = "READY"',
 ];
 

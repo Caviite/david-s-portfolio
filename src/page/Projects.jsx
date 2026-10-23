@@ -30,7 +30,8 @@ const projects = [
         tags: ["React", "Node.js", "AI API"],
         image: cardproImg,
         accent: "#7c7bff",
-        liveUrl: "#",
+        liveUrl: "https://business-card-generator-psi.vercel.app",
+         flagship: true,
         // codeUrl: "#",
     },
     {
