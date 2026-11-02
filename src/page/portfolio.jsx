@@ -26,8 +26,8 @@ const XIcon = (props) => (
         <path d="M13.68 10.62 20.5 3h-1.62l-5.93 6.62L8.2 3H2.5l7.15 10.02L2.5 21h1.62l6.26-6.98L15.8 21h5.7l-7.82-10.38Zm-2.22 2.48-.73-1.01L4.98 4.2h2.49l4.65 6.44.72 1.01 6.05 8.4h-2.49l-4.94-6.85Z" />
     </svg>
 );
-import heroPhoto from "../assets/david-hero.jpg"; // move david-hero.jpg into src/assets/
-import "../page/portfolio.css"; // move portfolio.css into src/page/
+import heroPhoto from "../assets/david-hero.jpg"; 
+import "../page/portfolio.css"; 
 
 const techStack = [
     { label: "HTML", icon: Code2, color: "#E34F26" },
