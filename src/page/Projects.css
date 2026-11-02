@@ -50,7 +50,7 @@
     font-family: "Sora", sans-serif;
     font-size: clamp(2rem, 3.6vw, 2.8rem);
     font-weight: 800;
-    margin: 0 0 14px;
+    margin: 0 0 15px;
 }
 
 .projects__subheading {
