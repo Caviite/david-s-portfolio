@@ -28,6 +28,7 @@ const XIcon = (props) => (
 );
 import heroPhoto from "../assets/david-hero.jpg"; 
 import "../page/portfolio.css"; 
+import cvFile from "../assets/David-Ademola-CV.pdf";
 
 const techStack = [
     { label: "HTML", icon: Code2, color: "#E34F26" },
@@ -98,10 +99,11 @@ export default function Portifolio() {
                     </motion.ul>
 
                     <motion.div variants={item}>
-                        <a href="/David-Ademola-CV.pdf" className="hero__cta" target="_blank" rel="noreferrer">   
+                        <a href={cvFile} className="hero__cta" target="_blank" rel="noreferrer" >   
                             View My CV 
                             <ArrowRight size={18} />
                         </a>
+                        {/* download="David-Ademola-CV.pdf" */}
                     </motion.div>
 
                     <motion.div className="hero__socials" variants={item}>
